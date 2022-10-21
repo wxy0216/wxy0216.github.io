@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+  body{
+  
+  }
+   h1{
+   background-color:#87CEFA;
+   }
+   p{
+   padding:2% 38%;
+   font-size:2em;
+   }
+  #nav {
+	font-size:14px;
+  }
+  #nav a{
+	color:#ff0000;
+	background-color:#99ccff;
+	text-align:center;
+	display:block;
+	padding:6px 10px 4px;
+	margin:0 2px;
+	border:1px solid #3399ff;
+	float:left;
+
+  }
+  #nav a:hover{
+	color:#ffffff;
+	background-color:#993300;
+  }
+  /* 下拉菜单按钮 */
+.dropdown {
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+}
+  </style>
+
+<script type="text/javascript">
+/* 搜索功能 */
+
+		
+</script>
+
+
+  <title>WebWork</title>
+ </head>
+ <body background="Date/img-2.jpg" style=" background-repeat:no-repeat ;background-size:100% 100%; background-attachment: fixed;">
+ <div id="nav">
+  <a href="index.html">首页</a>
+  <a href="EditPlusworkspace/WebWork.html">作业</a>
+  <a href="Date/Date.html">资料</a>
+
+</div>
+<div class="dropdown">
+  
+<p>年份：<select id = "year" onchange="javascript:location.href=this.value">  
+<option>---请选择---</option>
+<option value = "0"></option>
+<option value = "1" target = "_blank">2022</option>
+<option value = "2">2023</option>
+</select>
+   
+</p>
+<p>月份：<select id = "month" id="sel" onchange="javascript:location.href=this.value">
+<option>---请选择---</option>
+<option value = "0"></option>
+<option value = "EditPlusworkspace/month9/Test0903.html" target = "_blank">1</option>
+<option value = "EditPlusworkspace/month9/Test0906.html" target = "_blank">2</option>
+<option value = "EditPlusworkspace/month9/Test0906-2.html" target = "_blank">3</option>
+<option value = "EditPlusworkspace/month9/Test0928.html" target = "_blank">4</option>
+<option value = "EditPlusworkspace/month10/Test1019.html" target = "_blank">5</option>
+<option value = "EditPlusworkspace/month10/" target = "_blank">6</option>
+<option value = "EditPlusworkspace/month10/" target = "_blank">7</option>
+<option value = "EditPlusworkspace/month10/" target = "_blank">8</option>
+<option value = "EditPlusworkspace/month11/" target = "_blank">9</option>
+<option value = "EditPlusworkspace/month11/" target = "_blank">10</option>
+<option value = "EditPlusworkspace/month11/" target = "_blank">11</option>
+<option value = "EditPlusworkspace/month11/" target = "_blank">12</option>
+</select>
+	<input type="button"  id="btn" value="搜索" οnclick="search(this)"/>
+</p>
+</div>
+ </body>
+</html>
