@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name = "viewport" content = "width = device-width,initial-scale = 1.0">
+  <title>小学一年级算术练习（20以内）</title>
+  <style>
+  body{
+	font-size:30px;
+  }
+  input{
+	font-size:1em;
+  }
+  input[button]{
+	margin-right:1em;
+  }
+  </style>
+ </head>
+ <body>
+  <h1>hello</h1>
+  <div id='question'>
+    <input id ="opNum1" type = "text" readonly>
+	   <span id = "op"> + </span>
+    <input id ="opNum2" type = "text" readonly>
+  </div>
+  <div id = 'answer'>
+     A.<input  type = "button" value = "20" id ="answerA">
+	 B.<input  type = "button" value = "20" id ="answerB">
+	 C.<input  type = "button" value = "20" id ="answerC">
+	 D.<input  type = "button" value = "20" id ="answerD">
+  </div>
+  <script type="text/javascript">
+  <!--
+    var opNum1 = parseInt(10 * Math.random());
+    var opNum2 = parseInt(10 * Math.random());
+	var opNum1Dom = document.querySelector("input#opNum1");
+	var opNum2Dom = document.querySelector("input#opNum2");
+	var answerDoms = document.querySelectorAll("div#answer input");
+	    opNum1Dom.value = opNum1;opNum2Dom.value = opNum2;
+  -->
+  </script>
+ </body>
+</html>
