@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>用代码动态向Web页添加元素</title>
+  <style type="text/css">
+  div{
+		width:20%;
+		height:20%;
+		margin:1em;
+		padding:0.5em;
+		border:2px solid;
+		display:inline-block;
+		
+	}
+	div p{
+		text-align:center;
+		display:inline;
+		font-size:2em;
+	}
+  </style>
+	<script type="text/javascript">
+	<!--
+	var time=new Date();
+	function addToPage(){
+	  //创建一个对象div,把它赋值给变量，用body的方法显示出来
+		var div = document.createElement('div');
+		var p=document.createElement('p');
+		var randNum = Math.floor(new Date()-time)%1000;
+		p.textContent='No:'+randNum;
+		div.appendChild(p);
+		var txtColor=Math.random()>0.5?"blue":"red";
+		div.style.broderColor=txtColor;
+		document.body.appendChild(div);
+	};
+//-->
+  </script>
+  
+ </head>
+ <body>
+  <script type="text/javascript">
+  const domNum = 100;
+  for(var i =0;i<=domNum;i++){
+	addToPage();
+  }
+  //-->
+  </script>
+ </body>
+</html>
